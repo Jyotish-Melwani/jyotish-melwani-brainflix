@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+//Partials
+
+@import "./Styles/Partials/breakpoints";
+@import "./Styles/Partials/colors";
+@import "./Styles/Partials/fonts";
+@import "./Styles/Partials/mixins";
+@import "./Styles/Partials/navbar";

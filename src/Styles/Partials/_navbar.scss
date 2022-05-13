@@ -1,0 +1,63 @@
+/* mobile-styling-start */
+.navbar {
+    height: 10.5625rem;
+    &__container {
+      margin: 0 1rem 1rem 1rem;
+    }
+    &__logo-container {
+      height: 3rem;
+      display: flex;
+      justify-content: center;
+    }
+    &__searchIcon-container {
+      display: flex;
+      height: 3.0313rem;
+      align-items: center;
+      border: 1px solid $Brainflix-Blue;
+      background-color: $Silver;
+      border-radius: 0.25rem;
+      &--icon {
+        padding: 0 0.625rem 0 1.25rem;
+      }
+      &--text {
+        font-family: avenir-regular;
+        @include mobile-paragraph;
+      }
+    }
+    &__upload-container {
+      display: flex;
+      justify-content: center;
+      &-inner {
+        display: flex;
+        width: 14rem;
+        height: 3.0313rem;
+        background-color: $Brainflix-Blue;
+        margin: 0.5rem 1rem 0 0;
+        border-radius: 0.25rem;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          background-color: $Brainflix-Blue;
+        }
+        &--icon {
+          padding: 0 0.625rem 0 0;
+        }
+        &--text {
+          font-family: avenir-bold;
+          @include mobile-paragraph;
+          margin: 0;
+          color: white;
+        }
+      }
+      &--image {
+        height: 3rem;
+        width: 3rem;
+        margin: 0.5rem 0 0 0;
+        // background-image: url("../../Assets/Images/Mohan-muruge.jpg");
+        background-color: grey;
+        background-position: left;
+        background-size: cover;
+        border-radius: 2rem;
+      }
+    }
+  }
