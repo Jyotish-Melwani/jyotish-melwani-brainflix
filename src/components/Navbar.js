@@ -12,9 +12,12 @@ function Navbar() {
             <img className='header__logo' src={logo} alt='logo' />
           </div>
         </div>
+        <div className='navbar__searchBar-container '>
         <div className='navbar__searchIcon-container'>
           <img className='navbar__searchIcon-container--icon' src={searchIcon} alt='Search Icon' />
           <h4 className='navbar__searchIcon-container--text'>Search</h4>
+        </div>
+        <div className='navbar__upload-container--image'></div>
         </div>
         <div className='navbar__upload-container'>
           <div className='navbar__upload-container-inner'>
@@ -22,7 +25,6 @@ function Navbar() {
             <h4 className='navbar__upload-container-inner--text'>Upload</h4>
           </div>
         </div>
-        <div className='navbar__upload-container--image'></div>
       </nav>
     </div>
   )
