@@ -10,6 +10,7 @@
 
     @include desktop {
         border-left: 1px solid $mercury;
+        border-top: 0;
     }
     &__header {
         @include mobile-sectionHeader;
@@ -69,6 +70,7 @@
 
         &:hover {
             background-color: $brainflix-blue;
+            border-radius: 1rem;
         }
 
     }
