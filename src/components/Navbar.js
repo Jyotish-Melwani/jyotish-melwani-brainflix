@@ -5,29 +5,21 @@ import upload from '../Assets/Icons/upload.svg';
 
 function Navbar() {
   return (
-    <div>
-      <nav className='navbar'>
-        <div className='navbar__container'>
-          <div className='navbar__logo-container'>
-            <img className='navbar__logo' src={logo} alt='logo' />
-          </div>
+    <nav className="navbar">
+    <img className="navbar__logo" src = {logo} alt ="brainflix logo"></img>
+    <form className="navbar__form">
+            <div className="navbar__container">
+            <input className="navbar__search" type ="search"  placeholder = "Search"></input>
+            <img className="navbar__searchImage" src = {searchIcon} alt ="Search icon"></img>
+            <div className="navbar__avatar"></div>
+            </div>
+            
+            <div className="navbar__form-upload">
+            <button className="navbar__button"type = "submit" ><img className="navbar__uploadImage" src = {upload} alt ="Search icon"></img>UPLOAD</button>
+            <div className="navbar__avatar-tablet"></div>
         </div>
-        <div className='navbar__searchBar-container '>
-        <div className='navbar__searchIcon-container'>
-          <img className='navbar__searchIcon-container--icon' src={searchIcon} alt='Search Icon' />
-          <h4 className='navbar__searchIcon-container--text'>Search</h4>
-        </div>
-        <div className='navbar__upload-container--image'></div>
-        </div>
-        <div className='navbar__upload-container'>
-          <div className='navbar__upload-container-inner'>
-            <img className='navbar__upload-container-inner--icon' src={upload} alt='Upload Icon' />
-            <h4 className='navbar__upload-container-inner--text'>Upload</h4>
-          </div>
-        </div>
-      </nav>
-    </div>
-  )
-}
+    </form>
+  </nav>
+  )}
 
 export default Navbar

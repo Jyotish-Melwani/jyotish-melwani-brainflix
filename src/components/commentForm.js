@@ -7,7 +7,7 @@ function Commentform(props) {
             <div className="comments__avatar"></div>
 
             <div className="comments__container">
-            <div className="comments__container-label">
+            <div className="comments__form-container">
             <label className="comments__label">JOIN THE CONVERSATION</label>
             <textarea className="comments__input" name="text" placeholder="Add a new comment"></textarea>
             </div>

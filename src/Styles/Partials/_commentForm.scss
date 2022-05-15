@@ -73,6 +73,11 @@
         }
     }
 
+    &__form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
     &__button {
         height: 3rem;
         background-color: $brainflix-blue;
