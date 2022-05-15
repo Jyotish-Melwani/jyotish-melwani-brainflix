@@ -1,38 +1,119 @@
-.App {
-  text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: avenir-regular;
+  src: url(../../Assets/Font/AvenirNextLTPro-Regular.woff);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: avenir-bold;
+  src: url(../../Assets/Font/AvenirNextLTPro-Bold.woff);
+}
+
+/* mobile-styling-start */
+.navbar {
+  height: 10.5625rem;
+}
+
+.navbar__container {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.navbar__logo-container {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar__searchIcon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.0313rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #0095FF;
+  background-color: #AFAFAF;
+  border-radius: 0.25rem;
+}
+
+.navbar__searchIcon-container--icon {
+  padding: 0 0.625rem 0 1.25rem;
+}
+
+.navbar__searchIcon-container--text {
+  font-family: avenir-regular;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
+.navbar__upload-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar__upload-container-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14rem;
+  height: 3.0313rem;
+  background-color: #0095FF;
+  margin: 0.5rem 1rem 0 0;
+  border-radius: 0.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__upload-container-inner:hover {
+  background-color: #0095FF;
+}
+
+.navbar__upload-container-inner--icon {
+  padding: 0 0.625rem 0 0;
+}
+
+.navbar__upload-container-inner--text {
+  font-family: avenir-bold;
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+  margin: 0;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar__upload-container--image {
+  height: 3rem;
+  width: 3rem;
+  margin: 0.5rem 0 0 0;
+  background-color: grey;
+  background-position: left;
+  background-size: cover;
+  border-radius: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
