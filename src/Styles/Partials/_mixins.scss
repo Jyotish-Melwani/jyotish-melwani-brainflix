@@ -1,59 +1,79 @@
 // Mobile mixins //
 
-@mixin mobile-header {
+@mixin mobile-pageHeader {
     font-size: 1.5rem;
     line-height: 2rem;
+    font-family: 'avenir-bold';
+  }
+
+  @mixin mobile-sectionHeader {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: 'avenir-bold';
   }
   
-  @mixin mobile-subheader {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
+  @mixin mobile-subHeader {
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-family: 'avenir-bold';
   }
   
   @mixin mobile-paragraph {
     font-size: 0.8125rem;
     line-height: 1.125rem;
+    font-family: 'avenir-regular';
+
   }
   
   @mixin mobile-labels {
     font-size: 0.75rem;
     line-height: 1.25rem;
+    font-family: 'avenir-bold';
   }
   
 
   // Destop and Tablet mixins //
 
-  @mixin hero-header {
-    font-size: 3.75rem;
-    line-height: 4.25rem;
-  }
-  
-  @mixin header-one {
-    font-size: 2.25rem;
+  @mixin large-pageHeader {
+    font-size: 2.0625rem;
     line-height: 2.75rem;
+    font-family: 'avenir-bold';
   }
   
-  @mixin header-two {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  
-  @mixin sub-header {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  
-  @mixin paragraph {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-  }
-  
-  @mixin list {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-  
-  @mixin labels {
+  @mixin large-sectionHeader {
     font-size: 0.75rem;
     line-height: 1.25rem;
+    font-family: 'avenir-bold';
   }
+  
+  @mixin large-subHeader {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: 'avenir-bold';
+  }
+  
+  @mixin large-paragraph {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-family: 'avenir-regular';
+  }
+  
+  @mixin large-labels {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-family: 'avenir-bold';
+  }
+
+  // mixins for the avatars
+
+  @mixin mobileAvatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+
+@mixin largeAvatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}

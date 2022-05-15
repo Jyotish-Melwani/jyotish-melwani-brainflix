@@ -1,0 +1,67 @@
+
+.videoList {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    border-top: 1px solid $mercury;
+    @include tablet {
+        padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+    &__header {
+        @include mobile-sectionHeader;
+        color: $mercury;
+        @include tablet {
+            @include large-sectionHeader;
+       }
+    }
+
+    &__thumbnail {
+        max-width: 160px;
+        max-height: 100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        }
+
+    &__container {
+        min-width: 160px;
+        min-height: 100px;
+    }
+
+    &__desc {
+        display: flex;
+        margin-bottom: 1rem;
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+        &--inner {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+            width: 30%;
+        }
+
+        &--title {
+            margin: 0;
+            @include mobile-subHeader;
+
+            @include tablet {
+                @include large-subHeader;
+            }
+
+        }
+        &--channel {
+            margin: 0;
+            @include mobile-paragraph;
+
+            @include tablet {
+                @include large-paragraph;
+            }
+
+        }
+
+    }
+}
+
+

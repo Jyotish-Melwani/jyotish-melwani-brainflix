@@ -9,7 +9,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar__container'>
           <div className='navbar__logo-container'>
-            <img className='header__logo' src={logo} alt='logo' />
+            <img className='navbar__logo' src={logo} alt='logo' />
           </div>
         </div>
         <div className='navbar__searchBar-container '>

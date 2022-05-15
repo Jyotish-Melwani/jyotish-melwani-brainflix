@@ -1,0 +1,53 @@
+.commentSection {
+    @include mobile-paragraph;
+    margin:0;
+    padding: 0 1rem;
+    border-top:1px solid $mercury;
+
+    @include tablet {
+        @include large-paragraph;
+        padding: 0 1.5rem;
+
+    }
+
+    &__bottom{
+            min-height: 2rem;
+            margin-top: 0;
+            margin-left: 4rem;
+            word-wrap: break-word;
+    }
+
+    &__top {
+
+        &-avatar {
+            @include mobileAvatar;
+            background-color: $mercury;
+            position: absolute;
+            margin-top: 1.5rem;
+
+            @include tablet {
+                @include largeAvatar;
+            }
+    }
+
+    &--date {
+        color: $mercury;
+    }
+
+    &--name {
+        @include mobile-subHeader;
+
+        @include tablet {
+            @include large-subHeader;
+        }
+    }
+
+    &-break {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 4rem;
+    }
+}
+    
+}

@@ -1,62 +1,79 @@
-/* mobile-styling-start */
+
 .navbar {
-    height: 10.5625rem;
+    height: 10rem;
     padding: 0 1rem;
     margin-bottom: 1rem;
+    
     &__container {
       margin: 0 1rem 1rem 1rem;
     }
-    &__logo-container {
-      height: 2rem;
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-    }
+
+    &__logo {
+      max-width: 120px;
+      max-height: 25px;
+
+      &-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+      }
 
     &__searchBar-container {
       display: flex;
       justify-content: space-around;
     }
+    
     &__searchIcon-container {
       display: flex;
       height: 3rem;
       width: 80%;
       align-items: center;
-      border: 1px solid $Brainflix-Blue;
-      background-color: white;
+      border: 1px solid $brainflix-blue;
+      background-color: $mercury;
       border-radius: 0.25rem;
+
       &--icon {
         padding: 0 0.625rem 0 1.25rem;
       }
+
       &--text {
-        font-family: avenir-regular;
         @include mobile-paragraph;
+
+        @include tablet {
+          @include large-paragraph;
+        }
       }
     }
+    
     &__upload-container {
       display: flex;
       justify-content: center;
+
       &-inner {
         display: flex;
-        height: 3.0313rem;
-        background-color: $Brainflix-Blue;
-        margin: 0.5rem 1rem 0 0;
+        justify-content:space-evenly;
+        height: 3rem;
+        background-color: $brainflix-blue;
         border-radius: 0.25rem;
         justify-content: center;
         align-items: center;
         width: 99%;
         margin-top: 1rem;
         &:hover {
-          background-color: $Brainflix-Blue;
+          background-color: $brainflix-darkblue;
         }
         &--icon {
           padding: 0 0.625rem 0 0;
         }
         &--text {
-          font-family: avenir-bold;
           @include mobile-paragraph;
           margin: 0;
           color: white;
+
+          @include tablet {
+            @include large-paragraph;
+          }
         }
       }
       &--image {
@@ -71,51 +88,3 @@
       }
     }
   }
-
-@include tablet {
-  .navbar {
-    display: flex;
-    padding: 0rem 1.25rem;
-    height: 5rem;
-    &__container {
-      height: 5rem;
-      // display: flex;
-      align-items: center;
-      margin: 0 1.5rem;
-    }
-    &__logo-container {
-      margin: 1rem 0;
-      padding-right: 169px;
-    }
-    &__searchIcon-container {
-      margin: 1rem 0;
-      width: 15.4375rem;
-    }
-    &__upload-container {
-      margin: 1rem 0;
-      margin-left: auto;
-
-      &-inner {
-        width: 5.9375rem;
-        margin: 0 1.5rem;
-      }
-      &--image {
-        margin: 1rem 1.5rem;
-      }
-    }
-  }
-}
-
-@include desktop {
-  .header {
-    &__container {
-      margin: 0 11.25rem;
-    }
-    &__logo-container {
-      padding-right: 509px;
-    }
-    &__searchIcon-container {
-      width: 16.4375rem;
-    }
-  }
-}

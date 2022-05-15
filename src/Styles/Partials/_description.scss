@@ -1,0 +1,101 @@
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    font-family: 'avenir-regular';
+    @include tablet {
+        padding: 0 1.5rem;
+    }
+    @include desktop {
+        margin: 0;
+        // padding-left: $sixteen*10;
+        padding-right: 0;
+    }
+    &__title {
+        @include mobile-pageHeader;
+        padding-top: 1.5rem;
+        align-self: flex-start;
+        margin: 0;
+        @include tablet {
+            @include large-pageHeader;
+            padding-top: 2.25rem;
+        }
+    }
+
+    &-divider{
+        display: flex;
+        flex-direction: row;
+        border-bottom:  1px solid $mercury;
+        border-top:  1px solid $mercury;
+        margin: 1rem 0;
+        justify-content: space-between;
+        @include tablet {
+            flex-direction: row;
+            margin: 1.5rem;
+            border-top:  0px
+
+        }
+
+    }
+
+    &-user {
+        display: flex;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+        }
+        &__channel{
+            @include mobile-sectionHeader;
+            @include tablet {
+                @include large-subHeader;
+                margin-right: 2rem;
+            }
+        }
+
+        &__date{
+            color: $silver;
+        }
+    }
+
+    &-social {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5rem;
+        @include tablet {
+            margin-right: 0rem;
+            flex-direction: row;
+        }
+
+        &__viewIcon {
+                position:relative;              
+        }
+
+        &__likeIcon {
+            position:relative;
+            @include tablet {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+ 
+    
+    &__comments {
+        @include mobile-subHeader;
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+        @include tablet {
+            padding-top: 2.25rem;
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &__description {
+        margin: 0;
+        @include mobile-paragraph;
+        @include tablet {
+            @include large-paragraph
+        }
+    }
+}

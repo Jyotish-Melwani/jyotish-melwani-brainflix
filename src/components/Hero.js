@@ -4,7 +4,7 @@ function Hero(props) {
   return (
     <div className='hero'>
       <div className='hero__wrapper'>
-        <video className='hero__img' width="470" height="225" poster={props.content.image} controls></video>
+        <video className='hero__image' width="470" height="225" poster={props.content.image} controls></video>
       </div>
     </div>
   )

@@ -2,10 +2,9 @@ import React from 'react';
 import './App.scss';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import VideoInfo from './components/VideoInfo';
+import Description from './components/Description';
 import Comments from './components/comments';
 import Commentform from './components/commentForm';
-import Thumbnail from './components/VideoList';
 
 import data from './Data/video-details.json';
 import list from './Data/videos.json';
@@ -25,8 +24,8 @@ class App extends Component {
 
 
   clickHandler = (id) => {
-    const newSelection = this.state.data.find(entry => entry.id === id)
-    this.setState({ selectedData: newSelection, list: list.filter(video => video.id !== id) })
+    const selected = this.state.data.find(entry => entry.id === id)
+    this.setState({ selectedData: selected, list: list.filter(video => video.id !== id) })
 
   }
 
@@ -41,7 +40,7 @@ class App extends Component {
       <div className="App">
         <Navbar defaultPrevent={this.defaultPrevent} />
         <Hero content={this.state.selectedData} />
-        <VideoInfo content={this.state.selectedData} />
+        <Description content={this.state.selectedData} />
         <Commentform defaultPrevent={this.defaultPrevent} />
         <Comments comments={this.state.selectedData.comments} />
         <VideoList querySelector={this.ellipsisMake} clickHandler={this.clickHandler} selectedId={this.state.selectedId} list={this.state.list} />
