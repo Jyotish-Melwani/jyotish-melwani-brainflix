@@ -43,7 +43,8 @@
         border-radius: 0.25rem;
         background-color: $mercury;
         padding: 0.75rem;
-        // overflow: hidden;
+        overflow: hidden;
+        resize: none;
         margin-bottom: 0.5rem;
         @include mobile-paragraph;
         @include tablet {
