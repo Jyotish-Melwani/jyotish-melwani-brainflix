@@ -1,0 +1,11 @@
+.splitPage {
+    @include desktop{
+    display: flex;
+  }
+    &__one {
+        @include desktop{
+        width: 60%;
+        }
+    }
+  
+  }

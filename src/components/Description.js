@@ -18,11 +18,11 @@ function Description(props) {
                     <p className="info-user__date">{dateGet(new Date(Number(props.content.timestamp)))}</p></div>
                 <div className="info-social">
                     <p className="info-social__viewcount">
-                        <img className="info-social__viewIcon" src={views} alt="The View count icon">
+                        <img className="info-social__viewIcon" src={views} alt="view count icon">
                         </img>{props.content.views}</p>
 
                     <p className="info-social__likecount">
-                        <img className="info-social__likeIcon" src={likes} alt="The Like count icon">
+                        <img className="info-social__likeIcon" src={likes} alt="like count icon">
                         </img>{props.content.likes}</p>
                 </div>
             </div>

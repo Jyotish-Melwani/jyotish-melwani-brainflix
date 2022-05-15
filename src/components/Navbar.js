@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../Assets/Logo/BrainFlix-logo.svg';
 import searchIcon from '../Assets/Icons/search.svg';
 import upload from '../Assets/Icons/upload.svg';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (

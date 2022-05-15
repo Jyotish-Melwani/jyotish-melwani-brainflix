@@ -14,12 +14,10 @@
     }
     &__title {
         @include mobile-pageHeader;
-        padding-top: 1.5rem;
         align-self: flex-start;
         margin: 0;
         @include tablet {
             @include large-pageHeader;
-            padding-top: 2.25rem;
         }
     }
 
