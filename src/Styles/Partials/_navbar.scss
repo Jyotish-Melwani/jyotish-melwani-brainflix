@@ -89,31 +89,40 @@
       }
     }
 
-    &__uploadImage {
-      position: relative;
-    }
+
 
     &__button {
       width: 100%;
       min-height: 3rem;
       background-color: $brainflix-blue;
       color: white;
+      border-radius: 0.25rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @include mobile-paragraph;
       @include tablet {
         margin-left: 1rem;
         width: 60%;
         flex-grow: 2;
+        justify-content: space-evenly;
         @include large-paragraph;
 
+      }
+      
+
+      &:hover {
+        background-color: $brainflix-darkblue;
       }
     }
 
 &__avatar{
-  @include mobileAvatar;
-      margin-left: 1rem;
+  @include largeAvatar;
       background-image: url("../../Assets/Images/Mohan-muruge.jpg");
       background-size: cover;
-      margin-top: 1rem;
+      display: flex;
+      align-self: center;
+      margin-left: 1rem;
       @include tablet {
         visibility: hidden;
         margin: 0;
@@ -123,6 +132,8 @@
 
       &-tablet {
         @include largeAvatar;
+        display: flex;
+        align-self: center;
         margin-left: 1rem;
         background-image: url("../../Assets/Images/Mohan-muruge.jpg");
         background-size: cover;

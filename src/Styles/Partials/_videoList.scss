@@ -20,17 +20,18 @@
     }
 
     &__thumbnail {
-        max-width: 160px;
-        max-height: 100px;
+        max-width: 12.5rem;
+        max-height: 8rem;
         width: 100%;
         height: 100%;
         object-fit: cover;
         position: absolute;
+        border-radius: 0.25rem;
         }
 
     &__container {
-        min-width: 160px;
-        min-height: 100px;
+        min-width: 12.5rem;
+        min-height: 8rem;
     }
 
     &__desc {
@@ -48,6 +49,7 @@
 
         &--title {
             margin: 0;
+            padding-top: 1rem;
             @include mobile-subHeader;
 
             @include tablet {

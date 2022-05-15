@@ -43,7 +43,7 @@
         border-radius: 0.25rem;
         background-color: $mercury;
         padding: 0.75rem;
-        overflow: hidden;
+        // overflow: hidden;
         margin-bottom: 0.5rem;
         @include mobile-paragraph;
         @include tablet {
@@ -55,7 +55,7 @@
 
         @include desktop {
 
-            width: 35vw;
+            width: 30vw;
         }
 
         &::placeholder {
@@ -86,10 +86,14 @@
     &__button {
         height: 3rem;
         background-color: $brainflix-blue;
-        color: $mercury;
+        color: white;
         align-self: center;
         border-radius: 0.25rem;
         width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
 
         &:hover {
           background-color: $brainflix-darkblue;
@@ -98,13 +102,12 @@
 
         &-image {
             justify-content: flex-start;
-            position: relative;
         }
 
         @include tablet {
-            width: 8rem;
+            width: 9.375rem;
             height: 3rem;
-            margin: 1rem 1rem 0 1rem;
+            margin: 1rem 2rem 0 2rem;
             @include large-labels;
         }
     }

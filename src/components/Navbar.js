@@ -15,7 +15,7 @@ function Navbar() {
             </div>
             
             <div className="navbar__form-upload">
-            <button className="navbar__button"type = "submit" ><img className="navbar__uploadImage" src = {upload} alt ="Search icon"></img>UPLOAD</button>
+            <button className="navbar__button"type = "submit" ><img className="navbar__button--uploadImage" src = {upload} alt ="Search icon"></img>UPLOAD</button>
             <div className="navbar__avatar-tablet"></div>
         </div>
     </form>

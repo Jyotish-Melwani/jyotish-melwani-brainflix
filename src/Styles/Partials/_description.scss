@@ -10,6 +10,7 @@
     @include desktop {
         margin: 0;
         padding-left: 6rem;
+        padding-right: 0;
     }
     &__title {
         @include mobile-pageHeader;
@@ -27,11 +28,9 @@
         flex-direction: row;
         border-bottom:  1px solid $mercury;
         border-top:  1px solid $mercury;
-        margin: 1rem 0;
         justify-content: space-between;
         @include tablet {
             flex-direction: row;
-            margin: 1.5rem;
             border-top:  0px
 
         }
@@ -78,6 +77,10 @@
                 margin-left: 2rem;
             }
         }
+
+        @include desktop {
+            padding-right: 1rem;
+        }
     }
 
  
@@ -86,6 +89,7 @@
         @include mobile-subHeader;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
+        margin: 0;
         @include tablet {
             padding-top: 2.25rem;
             padding-bottom: 1.5rem;
@@ -95,9 +99,11 @@
 
     &__description {
         margin: 0;
+        padding-top: 1rem;
         @include mobile-paragraph;
         @include tablet {
-            @include large-paragraph
+            @include large-paragraph;
+            padding-top: 1.5rem;
         }
     }
 }

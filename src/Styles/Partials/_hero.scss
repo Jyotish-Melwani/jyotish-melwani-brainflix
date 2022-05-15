@@ -1,15 +1,15 @@
 .hero {
     &__wrapper {
         display: flex;
-        height: 250px;
+        height: 20rem;
         background-color: black;
         @include tablet {
-            height: 400px;
+            height: 30rem;
             display: flex;
             align-content: center;
         }
         @include desktop {
-            height: 500px;
+            height: 40rem;
         }
     }
     &__image {
