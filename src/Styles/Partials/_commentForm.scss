@@ -27,20 +27,19 @@
             width: 100%;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             padding-left: 1rem;
         }
 
     }
     &__input {
         height: 8rem;
-        min-width: 240px;
-        width: 100%;
+        width: 80vw;
         border:1px solid $mercury;
         border-radius: 0.25rem;
         background-color: $mercury;
-        overflow: hidden;
         padding: 0.75rem;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
         @include mobile-paragraph;
         @include tablet {
             padding: 1rem;
@@ -48,11 +47,15 @@
             @include large-paragraph;
             width: 70vw;
         }
-        margin-bottom: 1rem;
+
+        @include desktop {
+
+            width: 40vw;
+        }
+
         &::placeholder {
-            color: black;
+            color: $brainflix-black;
             position: relative;
-            top: 2px;
 
 
         }
@@ -72,12 +75,12 @@
 
     &__button {
         height: 3rem;
-        width: 100%;
         background-color: $brainflix-blue;
         color: $mercury;
         align-self: center;
-        margin-top: 1rem;
-        
+        border-radius: 0.25rem;
+        width: 80vw;
+
         &:hover {
           background-color: $brainflix-darkblue;
         }
@@ -90,6 +93,8 @@
         @include tablet {
             width: 8rem;
             height: 3rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
             @include large-labels;
         }
     }

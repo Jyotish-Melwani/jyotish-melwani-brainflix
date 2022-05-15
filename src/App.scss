@@ -22,3 +22,15 @@ body {
 @import "./Styles/Partials/commentForm";
 @import "./Styles/Partials/comments";
 @import "./Styles/Partials/videoList";
+
+.splitPage {
+  @include desktop{
+  display: flex;
+}
+  &__one {
+      @include desktop{
+      width: 60%;
+      }
+  }
+
+}

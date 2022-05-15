@@ -40,10 +40,14 @@ class App extends Component {
       <div className="App">
         <Navbar defaultPrevent={this.defaultPrevent} />
         <Hero content={this.state.selectedData} />
+        <div className='splitPage'>
+          <div className='splitPage__one'>
         <Description content={this.state.selectedData} />
         <Commentform defaultPrevent={this.defaultPrevent} />
         <Comments comments={this.state.selectedData.comments} />
+        </div>
         <VideoList querySelector={this.ellipsisMake} clickHandler={this.clickHandler} selectedId={this.state.selectedId} list={this.state.list} />
+        </div>
         </div>
     );
   }
