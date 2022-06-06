@@ -1,13 +1,14 @@
 import React from 'react'
-import play from '../Assets/Icons/play.svg'
-import fullscreen from '../Assets/Icons/fullscreen.svg'
-import volume_up from '../Assets/Icons/volume_up.svg'
+import play from '../../Assets/Icons/play.svg'
+import fullscreen from '../../Assets/Icons/fullscreen.svg'
+import volume_up from '../../Assets/Icons/volume_up.svg'
+import "./Hero.scss"
 
-function Hero(props) {
+function Hero({content}) {
   return (
     <div className='hero'>
       <div className='hero__wrapper'>
-        <video className='hero__image' width="470" height="225" poster={props.content.image} ></video>
+        <video className='hero__image' width="470" height="225" poster={content} ></video>
       </div>
 
       <div className="hero__icon-container">
@@ -18,7 +19,7 @@ function Hero(props) {
         <div className='hero__icon-container--scrubber'>
         <hr className='hero__icon-container--srubber-icon'></hr>
         <p className='hero__icon-container--scrubber-text'>
-          {props.content.duration}
+          {content.duration}
         </p>
         </div>
 

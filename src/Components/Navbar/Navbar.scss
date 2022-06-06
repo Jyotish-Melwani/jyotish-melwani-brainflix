@@ -1,6 +1,9 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/variables" as *;
+@use "../../Styles/Partials/breakpoints" as *;
 
 .navbar {
-    background-color: white;
+    background-color: $white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,13 +71,17 @@
       }
 
       &::placeholder {
-        color: $brainflix-black;
+        color: $black;
         position: relative;
       }
 
       &:focus {
        outline: none;
        border: 2px solid $brainflix-blue;
+      }
+
+      &:hover {
+        color: $brainflix-darkblue;
       }
 
     } 
@@ -95,8 +102,9 @@
       width: 100%;
       min-height: 3rem;
       background-color: $brainflix-blue;
-      color: white;
+      color: $white;
       border-radius: 0.25rem;
+      text-decoration: none;
       display: flex;
       justify-content: center;
       align-items: center;
