@@ -9,6 +9,8 @@ function Description({content}) {
         return ('0' + (dateVar.getMonth() + 1)).slice(-2) + '/' + ('0' + dateVar.getDate()).slice(-2) + '/' + dateVar.getFullYear()
     }
 
+    // need to export this function and import through helper folder
+
 
     return (
         <div className="info">

@@ -1,11 +1,10 @@
 @use "../../Styles/Partials/mixins" as *;
 @use "../../Styles/Partials/variables" as *;
-@use "../../Styles/Partials/breakpoints" as *;
 
 .upload {
     display: flex;
     flex-direction: column;
-    padding:0 $sixteen $sixteen ;
+    padding:0 1rem 1rem ;
     border-top: 1px solid $mercury; 
     animation: 0.8s ease-out 0s 1 slideFromBottom;
 
@@ -105,8 +104,8 @@
         background-color: $alabaster;
         border-radius: 4px;
         border: 1px solid $mercury;
-        height: $sixteen*2.5;
-        padding-left: $sixteen;
+        height: 1rem*2.5;
+        padding-left: 1rem;
         @include desktop {
 
         }
@@ -122,7 +121,7 @@
         border-radius: 4px;
         border: 1px solid $mercury;
         resize: none;
-        height: $sixteen*8;
+        height: 1rem*8;
         padding-left: 1rem;
         padding-top: 1rem;
         @include tablet {
@@ -139,7 +138,7 @@
 .btns {
     display: flex;
     flex-direction: column;
-    padding-top: $sixteen*2;
+    padding-top: 1rem*2;
     @include tablet {
         flex-direction: row-reverse;
         justify-content: flex-start;
@@ -147,17 +146,17 @@
         border-top: 2px solid $mercury;
     }
     &__publish {
-        padding: $sixteen 0;
+        padding: 1rem 0;
         @include tablet {
-            min-width: $sixteen*10;
+            min-width: 1rem*10;
         }
     }
     &__cancel {
         background-color: $white;
         color: $brainflix-blue;
-        padding: $sixteen 0;
+        padding: 1rem 0;
         @include tablet {
-            min-width: $sixteen*10;
+            min-width: 1rem*10;
 
         }
     }

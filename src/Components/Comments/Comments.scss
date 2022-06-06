@@ -1,6 +1,5 @@
 @use "../../Styles/Partials/mixins" as *;
 @use "../../Styles/Partials/variables" as *;
-@use "../../Styles/Partials/breakpoints" as *;
 
 .commentsAll {
     &__commentsnum {
@@ -160,10 +159,6 @@
         position: relative;   
         padding-bottom: 0.5rem;
         flex-wrap: nowrap;
-        // @include tablet {
-        //     justify-content: flex-start;
-
-        // }
         &__account{
             @include mobile-subHeader;
 

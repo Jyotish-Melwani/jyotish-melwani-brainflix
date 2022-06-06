@@ -8,17 +8,32 @@ $alabaster: #FAFAFA;
 $brainflix-blue: #0095FF;
 $brainflix-darkblue: #0065AD;
 
+// font variables
 
-// Breakpoint variables
+@font-face {
+    font-family: 'avenir-regular';
+    src: url(../../Assets/Font/AvenirNextLTPro-Regular.woff);
+    font-weight: 400;
+}
 
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1280px;
+@font-face {
+    font-family: 'avenir-bold';
+    src: url(../../Assets/Font/AvenirNextLTPro-Bold.woff);
+    font-weight: 700;
+}
 
-// Created variables for certain spacing sizes that had to be experimented with a lot, or may be a target for changes in the future
+// breakpoint variables
 
-$nonmobile-general-spacing: 36px;
-$desktop-side-spacing: 128px;
+@mixin tablet {
+    @media only screen and (min-width: 768px)
+    {
+        @content;
+    }
+}
 
-// Increments of 16px
-
-$sixteen: 16px;
+@mixin desktop {
+    @media only screen and (min-width: 1280px)
+    {
+        @content;
+    }
+}
