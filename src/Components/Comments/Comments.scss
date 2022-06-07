@@ -78,10 +78,6 @@
 
 
         }
-        &:focus {
-            outline: none;
-            border: 1px solid $brainflix-blue;
-           }
     }
     &__label {
         @include mobile-labels;
@@ -113,6 +109,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+
+        &-img {
+            margin-right: 1rem;
         }
     }
 }  
