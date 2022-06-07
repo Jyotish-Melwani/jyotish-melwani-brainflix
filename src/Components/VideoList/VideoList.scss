@@ -1,0 +1,104 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/variables" as *;
+
+a {
+    display: inline-block;
+}
+.videoList {
+    @include mobile-subHeader;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-top: 1px solid $mercury;
+
+    padding-top: 2rem;
+    @include tablet {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+    @include desktop {
+        border-left: 1px solid $mercury;
+        margin: 0;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+    }
+    &__header {
+        @include mobile-labels;
+        color: $mercury;
+        padding-bottom: 2rem;
+        @include tablet {
+            @include large-labels;
+        }
+    }
+
+    &__thumbnail {
+        min-width: 160px;
+        min-height: 100px;
+        object-fit: cover;
+        position: relative;
+        &--large {
+            min-width: 340px;
+            min-height: 220px;
+            right:80px;
+            object-fit: cover;
+            position: relative;
+            bottom: 40px;
+            right: 45px;
+        }
+        }
+
+    &-wrapper {
+        min-width: 160px;
+        min-height: 100px;
+        width: 140px;
+        height: 90px;
+        display: flex;
+        border-radius: 0.25rem;
+        overflow: hidden;
+
+    }
+
+    &-inner {
+        display: flex;
+        margin-bottom: 1rem;
+        @include tablet {
+            margin-bottom: 1.5rem;;
+        }
+        &-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 1rem;
+                @include tablet {
+                   width: 30%;
+                }
+            &__title {
+                margin: 0;
+                padding-top: 0.75rem;
+                @include mobile-subHeader;
+
+                @include tablet {
+                    @include large-subHeader;
+                }
+                
+
+            }
+            &__channel {
+                padding-bottom: 0.75rem;
+                margin: 0;
+                @include mobile-paragraph;
+
+                @include tablet {
+                    @include large-paragraph;
+                }
+
+            }
+
+     
+        }
+
+    }
+}

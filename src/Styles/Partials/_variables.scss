@@ -1,0 +1,39 @@
+// Color variables
+$black: #323232;
+$darkblack: #000000;
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$white: white;
+$alabaster: #FAFAFA;
+$brainflix-blue: #0095FF;
+$brainflix-darkblue: #0065AD;
+
+// font variables
+
+@font-face {
+    font-family: 'avenir-regular';
+    src: url(../../Assets/Font/AvenirNextLTPro-Regular.woff);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'avenir-bold';
+    src: url(../../Assets/Font/AvenirNextLTPro-Bold.woff);
+    font-weight: 700;
+}
+
+// breakpoint variables
+
+@mixin tablet {
+    @media only screen and (min-width: 768px)
+    {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 1280px)
+    {
+        @content;
+    }
+}
