@@ -1,12 +1,13 @@
 import React from 'react'
 import thumbnail from '../../Assets/Images/Upload-video-preview.jpg'
 import "./Upload.scss"
+import publishIcon from "../../Assets/Icons/publish.svg"
 
 function Upload(props) {
 
-    function pushBack(event) {
+    function uploadButton(event) {
         event.preventDefault()
-        alert("Upload complete!")
+        alert("Thank you for your participation")
         props.history.push('/')
     }
 
@@ -16,13 +17,13 @@ function Upload(props) {
             <h1 className="upload__header">Upload Video</h1>
             <div className="inner-load">
 
-                <form className="form" onSubmit={pushBack}>
+                <form className="form" onSubmit={uploadButton}>
                     <div className="form-one">
 
                         <div className="form-left">
                             <p className="form-left__description">VIDEO THUMBNAIL</p>
                             <div className="form-left-img-wrapper">
-                                <img className="form-left__img" src={thumbnail} alt="the thumbnail of a bicycle view"/>
+                                <img className="form-left__img" src={thumbnail} alt="thumbnail"/>
                             </div>
                         </div>
                         <div className="form-right">
@@ -34,8 +35,8 @@ function Upload(props) {
                         </div>
                     </div>
                     <div className="btns">
-                        <button className="btns__publish" type="submit">PUBLISH</button>
-                        <button className="btns__cancel" onClick={(e) => e.preventDefault()}>CANCEL</button>
+                        <button className="btns__publish" type="submit"><img className="btns_publish-img" src = {publishIcon} alt="publish icon"></img>PUBLISH</button>
+                        <button className="btns__cancel">CANCEL</button>
                     </div>
 
                 </form>

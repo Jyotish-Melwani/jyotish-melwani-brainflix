@@ -96,7 +96,12 @@
         @include mobile-labels;
         height: 3rem;
         background-color: $brainflix-blue;
+        border-radius: 0.25rem;
         color: $white;
+
+        &:hover {
+            background-color: $brainflix-darkblue;
+        }
         @include tablet {       
             @include large-labels;
             height: 100%;

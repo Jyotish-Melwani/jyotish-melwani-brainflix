@@ -2,12 +2,13 @@ import React from "react"
 import likes from "../../Assets/Icons/likes.svg"
 import views from "../../Assets/Icons/views.svg"
 import "./Description.scss"
+import getDate from "../../Helpers/Time"
 
 function Description({content}) {
 
-    const getDate = (dateVar) => {
-        return ('0' + (dateVar.getMonth() + 1)).slice(-2) + '/' + ('0' + dateVar.getDate()).slice(-2) + '/' + dateVar.getFullYear()
-    }
+    // const getDate = (dateVar) => {
+    //     return ('0' + (dateVar.getMonth() + 1)).slice(-2) + '/' + ('0' + dateVar.getDate()).slice(-2) + '/' + dateVar.getFullYear()
+    // }
 
     // need to export this function and import through helper folder
 

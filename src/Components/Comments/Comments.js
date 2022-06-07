@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import {API_KEY, API_URL} from '../../Helpers/Api.js'
 import './Comments.scss'
+// import getDate from '../../Helpers/Time.js'
 
 import axios from 'axios'
 
@@ -93,7 +94,7 @@ class Comments extends Component {
 
 
     // functions
-    formatDate = (dateVar) => {
+        getDate = (dateVar) => {
         return ('0' + (dateVar.getMonth() + 1)).slice(-2) + '/' + ('0' + dateVar.getDate()).slice(-2) + '/' + dateVar.getFullYear()
     }
 
@@ -105,7 +106,7 @@ class Comments extends Component {
             <li className="commentsLoaded-top">
                 <div className={className}></div>
                 <p className="commentsLoaded-top__account">{comment.name}</p>
-                <p className="commentsLoaded-top__date">{this.formatDate(new Date(Number(comment.timestamp)))}</p>
+                <p className="commentsLoaded-top__date">{this.getDate(new Date(Number(comment.timestamp)))}</p>
             </li>
             <li className="commentsLoaded-bottom">
                 <p className="commentsLoaded-bottom__comment">{comment.comment}</p>
