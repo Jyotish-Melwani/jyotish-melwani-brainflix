@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import {API_KEY, API_URL} from '../../Helpers/Api.js'
 import './Comments.scss'
+import add_comment from '../../Assets/Icons/add_comment.svg'
 // import getDate from '../../Helpers/Time.js'
 
 import axios from 'axios'
@@ -126,11 +127,11 @@ class Comments extends Component {
             <div className="commentsAll">
                 <h4 className="commentsAll__commentsnum">{this.state.comments.length} Comments</h4>
 
-                <form className="comments" onSubmit={this.submitCommentHandler }>
+                <form className="comments" onSubmit={this.submitCommentHandler}>
                     <div className="comments__mohan"></div>
                     <label className="comments__label" htmlFor="text">JOIN THE CONVERSATION</label>
                     <textarea className="comments__input" id="text" placeholder="Write comment here" name="comments" required></textarea>
-                    <button className="comments__button">COMMENT</button>
+                    <button className="comments__button"><img className="comments__button-img" src={add_comment} alt="add comment icon"></img>COMMENT</button>
                 </form>
 
                 {this.state.comments.sort((a, b) => {
