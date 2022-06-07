@@ -129,8 +129,8 @@ class Comments extends Component {
 
                 <form className="comments" onSubmit={this.submitCommentHandler}>
                     <div className="comments__mohan"></div>
-                    <label className="comments__label" htmlFor="text">JOIN THE CONVERSATION</label>
-                    <textarea className="comments__input" id="text" placeholder="Write comment here" name="comments" required></textarea>
+                    <label className="comments__label">JOIN THE CONVERSATION</label>
+                    <textarea className="comments__input" id="text" placeholder="Write comment here"required></textarea>
                     <button className="comments__button"><img className="comments__button-img" src={add_comment} alt="add comment icon"></img>COMMENT</button>
                 </form>
 
