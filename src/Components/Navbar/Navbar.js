@@ -16,7 +16,7 @@ function Navbar({ defaultPrevent }) {
             </div>
             
             <div className="navbar__form-upload">
-            <Link to="/upload" className="navbar__button"type = "submit" ><img className="navbar__button--uploadImage" src = {upload} alt ="Search icon"></img>UPLOAD</Link>
+            <Link to="/upload" className="navbar__button"><img className="navbar__button--uploadImage" src = {upload} alt ="Search icon"></img>UPLOAD</Link>
             <div className="navbar__avatar-tablet"></div>
         </div>
     </form>
