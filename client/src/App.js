@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import MainPage from './Components/Page/MainPage';
 import Upload from './Components/Upload/Upload';
 import { Component } from 'react'
-import './Styles/App.scss'
+import './App.scss'
 
 class App extends Component {
 
