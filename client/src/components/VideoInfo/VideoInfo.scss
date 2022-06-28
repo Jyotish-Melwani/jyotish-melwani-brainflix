@@ -89,8 +89,7 @@
             top: 3px;
             padding-right: 8px;
             &:hover{
-                transform: scale(1.1);
-                filter: invert(26%) sepia(76%) saturate(7471%) hue-rotate(355deg) brightness(99%) contrast(128%);
+                filter: sepia(76%) saturate(7471%) hue-rotate(355deg) brightness(130%) contrast(128%);
               
               }
         }

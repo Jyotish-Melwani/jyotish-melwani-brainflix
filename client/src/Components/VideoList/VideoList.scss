@@ -65,22 +65,19 @@
         &-block {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-left: 1rem;
                 @include tablet {
                    width: 30%;
                 }
             &__title {
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-
                 overflow: hidden;
-                padding-top: 4px;
+                padding-top: 0.25rem;
 
             }
             &__channel {
-                padding-bottom: 4px;
+                @include mobile-paragraph;
+                padding-bottom: 0.25rem;
 
             }
 

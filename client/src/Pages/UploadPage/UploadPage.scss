@@ -41,12 +41,13 @@
     }
     &-left { 
         @include tablet {
-
             max-width: 50%;
         }
+
         @include desktop {
             max-width: 36%;
         }
+
         &-img-wrapper{
         overflow: hidden;
         max-height: auto;
@@ -55,7 +56,6 @@
         @include desktop {
             min-height: 12.7rem
         }
-
 
     }
     &__description{
@@ -70,7 +70,6 @@
           border-radius: 0.25rem;
             @include desktop {
                 height: 12.7rem;
-
             }
       }
 }
@@ -155,9 +154,11 @@
         background-color: $white;
         color: $brainflix-blue;
         padding: 1rem 0;
+        &:focus {
+            background-color: $brainflix-darkblue;
+        }
         @include tablet {
             min-width: 10rem;
-
         }
     }
 }

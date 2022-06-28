@@ -39,7 +39,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   axiosDelete = (id, commentsId) => {
@@ -48,7 +48,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   // Click and Submit handlers which deal with viideo likes and posting/deletisng comments
@@ -58,7 +58,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(e.target.id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   handleOnSubmit = (event) => {

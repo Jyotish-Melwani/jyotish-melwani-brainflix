@@ -95,7 +95,6 @@
     &__label {
         @include mobile-labels;
         color: $mercury;
-        font-weight: 600;
         @include tablet {
             position: absolute;
             bottom: 3rem;
@@ -108,7 +107,7 @@
             height: 100%;
             width: 20%;
             margin-bottom: 0;
-            padding-top: 4px;
+            padding-top: 0.25rem;
             padding-left: 4rem;
             padding-right: 4rem;
             display: flex;
