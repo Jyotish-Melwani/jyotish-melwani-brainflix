@@ -1,11 +1,11 @@
-import Hero from "../../components/Video/Hero";
-import VideoInfo from "../../components/VideoInfo/VideoInfo";
-import Comments from "../../components/Comments/Comments";
-import Videolist from "../../components/Videolist/Videolist";
+import Hero from "../../Components/Hero/Hero";
+import VideoInfo from "../../Components/VideoInfo/VideoInfo";
+import Comments from "../../Components/Comments/Comments";
+import Videolist from "../../Components/VideoList/VideoList";
 import "./MainPage.scss";
 
 import axios from "axios";
-import { API_URL } from "../../helpers/api";
+import { API_URL } from "../../Helpers/Api";
 import { Component } from "react";
 
 class MainPage extends Component {
@@ -39,7 +39,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   axiosDelete = (id, commentsId) => {
@@ -48,7 +48,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   // Click and Submit handlers which deal with viideo likes and posting/deletisng comments
@@ -58,7 +58,7 @@ class MainPage extends Component {
       .then((response) => {
         this.axiosGet(e.target.id);
       })
-      .catch((err) => console.log("Error! it's about", err));
+      .catch((err) => console.log("Error", err));
   };
 
   handleOnSubmit = (event) => {

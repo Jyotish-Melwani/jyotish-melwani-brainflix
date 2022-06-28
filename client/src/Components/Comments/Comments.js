@@ -1,6 +1,6 @@
 import './Comments.scss'
 import { Component } from 'react'
-import { dateGet } from '../../helpers/api';
+import { dateGet } from '../../Helpers/Api';
 
 // import not working?
 

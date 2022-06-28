@@ -1,4 +1,4 @@
-import './Videolist.scss'
+import './VideoList.scss'
 import { Link } from 'react-router-dom'
 
 function Videolist(props) {
