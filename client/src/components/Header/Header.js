@@ -1,7 +1,7 @@
 import './Header.scss'
-import Logo from "../../assets/Logo/BrainFlix-logo.svg"
-import Search from "../../assets/Icons/search.svg"
-import Upload from "../../assets/Icons/upload.svg"
+import Logo from "../../Assets/Logo/BrainFlix-logo.svg"
+import Search from "../../Assets/Icons/search.svg"
+import Upload from "../../Assets/Icons/upload.svg"
 import { Link } from 'react-router-dom'
 
 

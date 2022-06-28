@@ -1,11 +1,11 @@
-import Hero from "../../components/Video/Hero";
-import VideoInfo from "../../components/VideoInfo/VideoInfo";
-import Comments from "../../components/Comments/Comments";
-import Videolist from "../../components/Videolist/Videolist";
+import Hero from "../../Components/Hero/Hero";
+import VideoInfo from "../../Components/VideoInfo/VideoInfo";
+import Comments from "../../Components/Comments/Comments";
+import Videolist from "../../Components/VideoList/VideoList";
 import "./MainPage.scss";
 
 import axios from "axios";
-import { API_URL } from "../../helpers/api";
+import { API_URL } from "../../Helpers/Api";
 import { Component } from "react";
 
 class MainPage extends Component {

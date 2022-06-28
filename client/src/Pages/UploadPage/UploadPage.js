@@ -1,8 +1,8 @@
 import React from 'react'
 import './UploadPage.scss'
-import thumbnail from '../../assets/Images/Upload-video-preview.jpg'
+import thumbnail from '../../Assets/Images/Upload-video-preview.jpg'
 import axios from 'axios'
-import { API_URL } from "../../helpers/api";
+import { API_URL } from "../../Helpers/Api";
 
 function UploadPage(props) {
 

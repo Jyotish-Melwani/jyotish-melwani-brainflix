@@ -1,7 +1,7 @@
-import Viewicon from '../../assets/Icons/views.svg'
-import Likeicon from '../../assets/Icons/likes.svg'
+import Viewicon from '../../Assets/Icons/views.svg'
+import Likeicon from '../../Assets/Icons/likes.svg'
 import './VideoInfo.scss'
-import { dateGet } from '../../helpers/api';
+import { dateGet } from '../../Helpers/Api';
 
 function VideoInfo({content, handleOnClick}) {
 
