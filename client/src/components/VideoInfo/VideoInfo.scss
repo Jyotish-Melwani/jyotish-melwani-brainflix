@@ -1,0 +1,114 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
+.info {
+    @include mobile-paragraph;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @include tablet {
+        @include large-paragraph;
+
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+    @include desktop {
+        margin: 0;
+        padding-left: 10rem;
+        padding-right: 0;
+    }
+    &__title {
+        @include mobile-pageHeader;
+        padding-top: 3rem;
+        align-self: flex-start;
+        @include desktop {
+            @include large-pageHeader;
+        }
+    }
+
+    &-divider{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-bottom:  1px solid $mercury;
+        padding-top: 1rem;
+
+        padding-bottom: 1rem;
+        @include tablet {
+            justify-content: space-between;
+            flex-direction: row;
+            padding-right: 2rem;
+
+        }
+        @include desktop {
+        }
+
+    }
+
+    &-user {
+        display: flex;
+        justify-content:flex-start;
+
+        margin-right: 1rem;
+        &__data{
+            margin-right: 1rem;
+            display: flex;
+            align-items: flex-end;
+            @include mobile-subHeader;
+
+            @include tablet {
+                @include large-subHeader;
+            }
+        }
+
+        &__data-two{
+            color: $silver;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    &-social {
+        display: flex;
+        justify-content:flex-start;
+        padding-top: 1rem;
+        @include tablet {
+            padding-top: 0px;
+
+        }
+
+        &__view-icon {
+                position:relative;
+                top: 3px;
+                padding-right: 8px;
+        }
+
+        &__like-icon {
+            position:relative;
+            top: 3px;
+            padding-right: 8px;
+            &:hover{
+                transform: scale(1.1);
+                filter: invert(26%) sepia(76%) saturate(7471%) hue-rotate(355deg) brightness(99%) contrast(128%);
+              
+              }
+        }
+        
+        &__likecount {
+            padding-left: 2rem;
+        }
+    }
+
+ 
+
+    &__description {
+        padding-top: 1rem;
+        @include tablet {
+            width: 95%;
+        }
+        @include desktop {
+            width: 90%;
+        }
+    }
+}
