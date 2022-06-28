@@ -1,0 +1,35 @@
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
+.hero {
+    &-thumbWrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        max-height: 40vh;
+        background-color: $darkblack;
+        @include tablet {
+            max-height: 60vh;
+
+        }
+        @include desktop {
+            max-height: 70vh;
+
+        }
+    }
+    &__img {
+        width: 100vw;
+        height: auto;
+        object-fit: cover;
+        @include tablet {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        @include desktop {
+            padding-left: 15rem;
+            padding-right: 15rem;
+        }
+    }
+
+
+}

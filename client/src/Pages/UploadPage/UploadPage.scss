@@ -1,11 +1,12 @@
-@use "../../Styles/Partials/mixins" as *;
-@use "../../Styles/Partials/variables" as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
 
 .upload {
     display: flex;
     flex-direction: column;
     padding:0 1rem 1rem ;
-    border-top: 1px solid $mercury;
+    border-top: 1px solid $mercury; 
 
     @include desktop {
         padding:0 10rem 10rem;
@@ -103,7 +104,7 @@
         background-color: $alabaster;
         border-radius: 0.25rem;
         border: 1px solid $mercury;
-        height: 2.5rem;
+        height: 2rem.5;
         padding-left: 1rem;
         @include desktop {
 
@@ -120,7 +121,7 @@
         border-radius: 0.25rem;
         border: 1px solid $mercury;
         resize: none;
-        height: 1rem*8;
+        height: 8rem;
         padding-left: 1rem;
         padding-top: 1rem;
         @include tablet {
@@ -146,26 +147,14 @@
     }
     &__publish {
         padding: 1rem 0;
-        background-color: $brainflix-blue;
-        color: $white;
-        margin-bottom: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.25rem;
         @include tablet {
-            min-width: 10rem
-        }
-
-        &-img {
-            justify-content: left;
+            min-width: 10rem;
         }
     }
     &__cancel {
         background-color: $white;
         color: $brainflix-blue;
         padding: 1rem 0;
-        border: none;
         @include tablet {
             min-width: 10rem;
 

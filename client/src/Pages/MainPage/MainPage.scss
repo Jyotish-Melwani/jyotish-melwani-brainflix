@@ -1,0 +1,25 @@
+@use "../../partials/typography" as *;
+@use "../../partials/variables" as *;
+@use "../../partials/mixins" as *;
+
+
+.half-page {
+    @include desktop{
+    display: flex;
+  
+}
+    &-left {
+        @include desktop{
+        width: 60%;
+        }
+    }
+
+}
+
+.load-screen{
+
+    @include large-pageHeader;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+}

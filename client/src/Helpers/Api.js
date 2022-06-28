@@ -1,3 +1,8 @@
-export const API_KEY = "686acda6-06d0-41cd-930f-f91f224e0b1c"
 
-export const API_URL = "https://project-2-api.herokuapp.com/"
+
+export const API_URL = "http://localhost:8080/api/"
+
+
+export const dateGet = (dateVar) => {
+    return ('0' + (dateVar.getMonth() + 1)).slice(-2) + '/' + ('0' + dateVar.getDate()).slice(-2) + '/' + dateVar.getFullYear()
+};

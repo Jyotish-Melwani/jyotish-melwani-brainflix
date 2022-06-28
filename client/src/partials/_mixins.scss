@@ -1,4 +1,66 @@
-// Mobile mixins //
+@use "./typography" as*;
+@use "./variables" as*;
+
+
+@mixin font-properties ($text-size, $line-height) {
+    font-size: $text-size;
+    line-height: $line-height;
+    @content;
+}
+
+// mixins for medi queries
+
+@mixin mobile-side-padding {
+    padding:0 16px;
+    @content;
+}
+
+
+@mixin tablet-side-padding {
+    padding:0 36px;
+    @content;
+}
+
+// setting logo  styles.
+
+@mixin logo-styling {
+    max-height: 20px;
+    max-width: 120px;
+    text-decoration: none;
+    color: $white;
+    @content;
+}
+
+// mixins for avatars
+
+@mixin avatarMobile {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    @content;
+}
+
+@mixin avatarLarge {
+    border-radius: 50%;
+    min-height: 48px;
+    min-width: 48px;
+}
+
+// mixins for media queries
+
+@mixin tablet {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+// Mobile font mixins //
 
 @mixin mobile-pageHeader {
     font-size: 1.5rem;
@@ -32,7 +94,7 @@
   }
   
 
-  // Destop and Tablet mixins //
+  // Destop and Tablet font mixins //
 
   @mixin large-pageHeader {
     font-size: 2.0625rem;
